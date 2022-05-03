@@ -7,16 +7,6 @@ t2a.addEventListener('click', function(){
 });
 
 
-// Achievements link
-var id1 = document.getElementById('id1');
-id1.addEventListener('click', function(){
-    window.open("https://drive.google.com/file/d/1DPw5y37Vl2WEMRrlL9kKOd2D7wRDVXI7/view","_blank");
-});
-
-
-
-
-
 // add smooth scroll on click naviagition menu items
 
 var navMenuAncherTag = document.querySelectorAll('.nav-menu a');
