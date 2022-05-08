@@ -129,13 +129,16 @@ body::-webkit-scrollbar {
     border-width:1px; 
     text-align: center; 
     padding: 5px 15px;
-    border-style:solid;border-radius: 10%;
+    border-style:solid;
+    border-radius: 10%;
 }
 
 .resume:hover{
     transform: scale(1);
     background-color: orange;
+    border:orange;
     color: white;
+    border-radius: 30%;
 }
 
 .resume1{
@@ -143,13 +146,15 @@ body::-webkit-scrollbar {
     border-width:1px; 
     text-align: center; 
     padding: 5px 15px;
-    border-style:solid;border-radius: 10%;
+    border-style:solid;
+    border-radius: 10%;
 }
 
 .resume1:hover{
     transform: scale(1);
     background-color: orange;
     color: white;
+    border-radius: 30%;
 }
 
 
@@ -671,7 +676,7 @@ button:focus {
     }
 
     .bars {
-        display:block;
+        display:block;        
     }
     
     .nav-menu {
@@ -686,7 +691,10 @@ button:focus {
     .resume1{
         display:none;
     }
-   
+
+    #name-social-container {
+        margin-top: 10vh;
+    }
     
     
 }
