@@ -313,6 +313,7 @@ section:nth-child(2n + 1) {
 
 .timeline-logo > img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .timeline-divider {
