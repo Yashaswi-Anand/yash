@@ -378,16 +378,24 @@ section:nth-child(2n + 1) {
 }
 
 .portfolio-image-container {
-    max-width: 300px;
+    max-width: 260px;
+    max-height: 230px;
     overflow: hidden;
     margin: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    border: 2px solid #b9b9b9;
+    border-radius: 10px;
+}
+
+.portfolio-image-container a{
+    visibility: hidden;
 }
 
 .portfolio-image-container img {
-    width: 90%;
+    margin-top: 42px;
+    width: 100%;
     height: 80%;
 }
 
@@ -398,22 +406,29 @@ section:nth-child(2n + 1) {
     left: 0;
     height: 100%;
     color: transparent;
-    text-align: justify; 
     padding: 10px;
 }
 
-.portfolio-details h6{
-    margin: 5%;
-    padding: 0%;
+.portfolio-details h1{
+    font-size: 16px;
+    /* margin: 5%; */
+    
 }
 
-.portfolio-image-container:hover {
+.portfolio-image-container:hover a {
     box-shadow: 0 0 20px #74ADC8;
+    visibility: visible;
 }
 
-.portfolio-image-container:hover .portfolio-details {
-    background-color: #80808096;
-    color: whitesmoke;
+.portfolio-image-container:hover i{
+    color: black;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.portfolio-image-container:hover .portfolio-details{
+    background-color: white;
+    color: black;
 }
 
 /* Achievement Section */
@@ -454,11 +469,18 @@ section:nth-child(2n + 1) {
     color: transparent;
     text-align:center; 
     padding: 10px;
+    width: 93.5%;
+    border-radius: 5%;
 }
 
 .achievement-image-container:hover .achievement-details {
     background-color: #80808096;
-    color: blue;
+    color: white;
+}
+
+.achievement-image-container:hover h6{
+    background-color: rgb(135, 135, 235);
+    border-radius: 10%;
 }
 
 

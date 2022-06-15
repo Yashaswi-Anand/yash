@@ -5,15 +5,6 @@ resumeLink[0].addEventListener("click", function(){
 });
 
 
-// Project/Portfolio liks
-
-var t2a = document.getElementById('project-link');
-t2a.addEventListener('click', function(){
-    t2a.innerText = "know";
-    window.open("https://play.google.com/store/apps/details?id=com.yashanand.time2achieve","_blank");
-});
-
-
 // add smooth scroll on click naviagition menu items
 
 var navMenuAncherTag = document.querySelectorAll('.nav-menu a');
