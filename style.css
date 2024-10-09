@@ -230,12 +230,12 @@ section:nth-child(2n + 1) {
 /*Skills Section*/
 
 .skills-display {
-    width: 75%;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .skill-progress {
@@ -244,7 +244,7 @@ section:nth-child(2n + 1) {
     background-color: lightgrey;
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
-    margin: 25px;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -258,6 +258,10 @@ section:nth-child(2n + 1) {
     font-size: 1rem;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+.skills-subheading {
+    width: 70%;
 }
 
 
@@ -666,6 +670,10 @@ button:focus {
     background-color: #93738c;
 }
 
+.mb-brown {
+    background-color: #8f4b0e;
+}
+
 
 
 /*Percentage Classes */
@@ -685,12 +693,14 @@ button:focus {
     width: 70%;
 }
 
-
 .sixty-percent {
     height: inherit;
     width: 60%;
 }
 
+.flex-direction {
+    flex-direction: row;
+}
 
 @media only screen and (max-width: 450px) {
     
@@ -728,8 +738,11 @@ button:focus {
         max-width: 270px;
         max-height: 250px;
     }
-    
-    
+
+    .flex-direction {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -777,5 +790,23 @@ button:focus {
         max-width: 270px;
         max-height: 250px;
     }
+
+    .flex-direction {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+/* Common */ 
+.display-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.w-100-per {
+    width: 100%;
 }
 
