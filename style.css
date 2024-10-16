@@ -88,14 +88,35 @@ body::-webkit-scrollbar {
     margin: 0px 8px 8px 0px;
 }
 
+.menu_background {
+    background-color: rgba(245, 245, 245, 0.262);
+    border: 1px solid gray;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: -10vh;
+}
+
+.sticky_menu {
+    position: fixed;
+    top: 10;
+    width: 100%; /* Full width to make it span across the top */
+    z-index: 1000; /* Ensure it stays on top */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky_menu.scrolled {
+    background-color: #222; /* Change background on scroll */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
 
 .nav-menu li a {
-    transition: color 0.5s, border-bottom 4s;
+    transition: colo0r 0.5s, border-bottom 4s;
     font-size: 1.1rem;
 }
 
 .nav-menu li a:hover {
-    color: #3bec23;
+    color: navy;
     border-bottom: 1px solid black;
 }
 
@@ -204,7 +225,7 @@ section:nth-child(2n + 1) {
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -17vh;
+    margin-top: -10vh;
 }
 
 #my-image img {
